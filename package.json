@@ -1,0 +1,19 @@
+{
+  "name": "proj-pw",
+  "version": "1.0.0",
+  "description": "Projeto atividade PW2",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.ls"
+  },
+  "author": "Antonio Jorge de Lima",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.1",
+    "sequelize": "^6.33.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
