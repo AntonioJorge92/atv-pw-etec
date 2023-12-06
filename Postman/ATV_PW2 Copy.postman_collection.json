@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "45417450-f8f9-49ee-8bec-dd136053fe70",
+		"name": "ATV_PW2 Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29029797"
+	},
+	"item": [
+		{
+			"name": "ControllerProduto",
+			"item": [
+				{
+					"name": "Cadastro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome_produto\": \"novo produto\",\r\n    \"valor_produto\": 1.00,\r\n    \"imagem_produto\": \"https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01.jpg\",\r\n    \"descricao_produto\":\"novo produto inserido\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "HTTP://localhost:3000/cadastro",
+							"protocol": "HTTP",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cadastro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListaProduto",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "HTTP://localhost:3000/ListaProduto",
+							"protocol": "HTTP",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ListaProduto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletarProduto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "HTTP://localhost:3000/DeletarProduto/1",
+							"protocol": "HTTP",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"DeletarProduto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AlterarProduto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome_produto\": \"novo produto\",\r\n    \"valor_produto\": 12.00,\r\n    \"imagem_produto\": \"https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01.jpg\",\r\n    \"descricao_produto\":\"novo produto inserido\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "HTTP://localhost:3000/AlterarProduto/3",
+							"protocol": "HTTP",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"AlterarProduto",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ControllerCategoria",
+			"item": [
+				{
+					"name": "CadastrarCategoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome_categoria\": \"Ronaldo\",\r\n    \"observacoes_categoria\": \"Quem mais Eu jogar com categoria\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "HTTP://localhost:3000/CadastrarCategoria",
+							"protocol": "HTTP",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"CadastrarCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarCategoria",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "HTTP://localhost:3000/ListarCategoria",
+							"protocol": "HTTP",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ListarCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AlterarCategoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome_categoria\":\"alterando name\",\r\n\r\n    \"descrição_categoria\":\"descrevendo name\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "HTTP://localhost:3000/AlterarCategoria/2",
+							"protocol": "HTTP",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"AlterarCategoria",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletarCategoria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "HTTP://localhost:3000/DeletarCategoria/1",
+							"protocol": "HTTP",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"DeletarCategoria",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
